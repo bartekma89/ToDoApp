@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 
 const Button = props => {
 	return (
-		<button
-			onClick={props.onAction}
-			className={`btn btn-default`}
-			{...props}
-		>
+		<button onClick={props.onAction} className="btn btn-default" {...props}>
 			{props.title}{' '}
 			{props.icon ? (
 				<span className={`glyphicon glyphicon-${props.icon}`} />
